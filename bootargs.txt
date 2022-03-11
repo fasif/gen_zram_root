@@ -1,0 +1,1 @@
+ssh_key ip=172.16.12.222::172.16.12.1:255.255.255.0::eth0::172.16.12.1:: alpine_repo=http://dl-cdn.alpinelinux.org/alpine/edge/main pkgs=chrony,cryptsetup,tzdata,e2fsprogs,vim,make,mkinitfs,sudo

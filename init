@@ -611,8 +611,8 @@ disksize=${KOPT_root_size:="1G"}
 modprobe zram num_devices=1
 echo zstd > /sys/block/zram0/comp_algorithm
 echo $disksize > /sys/block/zram0/disksize
-mkfs.ext4 /dev/zram0
-mount /dev/zram0 $sysroot
+mkfs.ext4  -F /dev/zram0
+mount -t ext4 /dev/zram0 $sysroot
 
 
 if [ -z "$KOPT_apkovl" ]; then
